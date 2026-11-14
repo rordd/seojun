@@ -366,7 +366,6 @@ input:focus-visible, textarea:focus-visible, button:focus-visible { outline: 3px
 
   window.onYouTubeIframeAPIReady = function () {
     player = new YT.Player('yt', {
-      host: 'https://www.youtube-nocookie.com',
       playerVars: { playsinline: 1, rel: 0, modestbranding: 1, iv_load_policy: 3, fs: 1, controls: 1 },
       events: {
         onReady: function () { ready = true; if (clips.length) cue(idx); },
